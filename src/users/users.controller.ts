@@ -13,4 +13,8 @@ export class UserController {
   getUser(): string {
     return 'Hello';
   }
+  @Get()
+  getAllUsers(): string {
+    return 'Hello All';
+  }
 }
