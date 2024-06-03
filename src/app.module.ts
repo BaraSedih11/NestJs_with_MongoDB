@@ -6,7 +6,7 @@ import { UsersModule } from './users/users.module';
   imports: [
     UsersModule,
     MongooseModule.forRoot(
-      'mongodb+srv://baraalsedih:Bis%40158963@cluster0.cwy0zf2.mongodb.net/nestjs-prject',
+      'mongodb+srv://baraalsedih:Bis%40158963@cluster0.cwy0zf2.mongodb.net/nestjs-project',
     ),
   ],
   controllers: [],
