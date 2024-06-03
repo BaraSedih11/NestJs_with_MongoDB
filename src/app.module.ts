@@ -1,8 +1,14 @@
 import { Module } from '@nestjs/common';
 import { MongooseModule } from '@nestjs/mongoose';
+import { UsersModule } from './users/users.module';
 
 @Module({
-  imports: [MongooseModule.forRoot(' mongodb://localhost/nestjs_db')],
+  imports: [
+    UsersModule,
+    MongooseModule.forRoot(
+      'mongodb+srv://baraalsedih:Bis%40158963@cluster0.cwy0zf2.mongodb.net/nestjs-prject',
+    ),
+  ],
   controllers: [],
   providers: [],
 })
